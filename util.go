@@ -10,16 +10,17 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/davecgh/go-spew/spew"
+	"github.com/moleculer-go/go-spew/spew"
 	"github.com/pmezard/go-difflib/difflib"
 )
 
 var spewConfig = spew.ConfigState{
-	Indent:                  "  ",
-	SortKeys:                true, // maps should be spewed in a deterministic order
-	DisablePointerAddresses: true, // don't spew the addresses of pointers
-	DisableCapacities:       true, // don't spew capacities of collections
-	SpewKeys:                true, // if unable to sort map keys then spew keys to strings and sort those
+	Indent:                              "  ",
+	SortKeys:                            true, // maps should be spewed in a deterministic order
+	DisablePointerAddresses:             true, // don't spew the addresses of pointers
+	DisableCapacities:                   true, // don't spew capacities of collections
+	SpewKeys:                            true, // if unable to sort map keys then spew keys to strings and sort those
+	DisableFunctionTypePointerAddresses: true, // don't spew the addresses of function fields as pointers
 }
 
 //go:generate $GOPATH/bin/mockery -output=examples -outpkg=examples_test -testonly -name=TestingT
