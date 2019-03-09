@@ -16,6 +16,7 @@ import (
 
 var spewConfig = spew.ConfigState{
 	Indent:                              "  ",
+	SortLines:                           true,
 	SortKeys:                            true, // maps should be spewed in a deterministic order
 	DisablePointerAddresses:             true, // don't spew the addresses of pointers
 	DisableCapacities:                   true, // don't spew capacities of collections
