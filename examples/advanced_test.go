@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bradleyjkemp/cupaloy/v2"
+	"github.com/moleculer-go/cupaloy/v2"
 	"github.com/stretchr/testify/mock"
 )
 

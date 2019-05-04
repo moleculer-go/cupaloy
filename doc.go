@@ -5,7 +5,7 @@
 // Snapshot files are handled automagically: just use the cupaloy.Snapshot(value) function in your tests and cupaloy will automatically find the relevant snapshot file and compare it with the given value.
 //
 // Installation
-//   go get -u github.com/bradleyjkemp/cupaloy
+//   go get -u github.com/moleculer-go/cupaloy
 //
 // Usage
 //  func TestExample(t *testing.T) {

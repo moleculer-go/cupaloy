@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/moleculer-go/go-spew/spew"
+	"github.com/moleculer-go/spew"
 	"github.com/pmezard/go-difflib/difflib"
 )
 
