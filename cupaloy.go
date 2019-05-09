@@ -120,5 +120,5 @@ func (c *Config) snapshot(snapshotName string, i ...interface{}) error {
 	}
 
 	diff := diffSnapshots(prevSnapshot, snapshot)
-	return fmt.Errorf("snapshot not equal:\n%s", diff)
+	return fmt.Errorf("snapshot ["+snapshotName+"] not equal:\n%s", diff)
 }

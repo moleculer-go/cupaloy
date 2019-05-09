@@ -108,7 +108,7 @@ func (c *Config) updateSnapshot(snapshotName string, snapshot string) error {
 	}
 
 	if !c.failOnUpdate {
-		//TODO: should a warning still be printed here?
+		fmt.Println("snapshot updated: ", snapshotName)
 		return nil
 	}
 
